@@ -18,3 +18,16 @@ function nowServing(katzDeliLine, name) {
   katzDeliLine.shift();
   return nowTaking;
 }
+
+function currentLine(katzDeliLine, name) {
+  if (katzDeliLine.length === 0) {
+    var line = "The line is currently empty.";
+  } else {
+    for (var i = 0; i < katzDeliLine.length; i++) {
+      var person = katzDeliLine[i];
+      var number = i;
+      var line = `The line is currently: ${number}. ${person},`;
+    }
+
+  }
+}
