@@ -8,3 +8,8 @@ function takeANumber(katzDeliLine, name) {
   }
   return welcome;
 }
+
+function nowServing(katzDeliLine, name) {
+  var nowTaking = `Now serving number ${i + 1}!`;
+  katzDeliLine.shift();
+}
