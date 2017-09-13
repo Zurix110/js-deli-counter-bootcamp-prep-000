@@ -19,13 +19,16 @@ function nowServing(katzDeliLine, name) {
   return nowTaking;
 }
 
-function currentLine(katzDeliLine, name) {
+function currentLine(katzDeliLine) {
   if (katzDeliLine.length === 0) {
-    var line = "The line is currently empty.";
+    var currentLine = "The line is currently empty.";
   } else {
+    var currentLine = "The line is currently: "
     for (var i = 0; i < katzDeliLine.length; i++) {
-      var line = "The line is currently: " + i + "." + name + ",";
+     var number = i;
+     var person = katzDeliLine[i];
+     currentLine += number + ". " + person + ", ";
     }
-  }
-  return line;
+    }
+  return currentLine;
 }
