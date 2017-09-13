@@ -24,9 +24,7 @@ function currentLine(katzDeliLine, name) {
     var line = "The line is currently empty.";
   } else {
     for (var i = 0; i < katzDeliLine.length; i++) {
-      var person = katzDeliLine[i];
-      var number = i;
-      var line = "The line is currently: " + number + "." + person + ",";
+      var line = "The line is currently: " + i + "." + name + ",";
     }
   }
   return line;
