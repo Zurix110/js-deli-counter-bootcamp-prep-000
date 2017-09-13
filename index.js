@@ -12,7 +12,7 @@ function takeANumber(katzDeliLine, name) {
 function nowServing(katzDeliLine, name) {
 
   for (var i = 0; i < katzDeliLine.length; i++) {
-    var nowTaking = `Now serving number ${i + 1}!`;
+    var nowTaking = `Currently serving ${name}.`;
     katzDeliLine.shift();
   }
   return nowTaking;
