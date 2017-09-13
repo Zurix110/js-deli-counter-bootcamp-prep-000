@@ -27,7 +27,7 @@ function currentLine(katzDeliLine) {
       for (var i = 0; i < katzDeliLine.length; i++) {
         var number = i + 1;
         var person = katzDeliLine[i];
-        if (number + 1 === katzDeliLine.length) {
+        if (number === katzDeliLine.length) {
           currentLine += number + ". " + person;
         } else {
           currentLine += number + ". " + person + ", ";
