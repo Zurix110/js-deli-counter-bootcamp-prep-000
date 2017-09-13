@@ -14,7 +14,7 @@ function nowServing(katzDeliLine, name) {
       var nowTaking = "There is nobody waiting to be served!";
     } else {
       var nowTaking = `Currently serving ${katzDeliLine[0]}.`;
-    }  
+    }
   katzDeliLine.shift();
   return nowTaking;
 }
