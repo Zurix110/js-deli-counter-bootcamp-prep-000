@@ -28,6 +28,6 @@ function currentLine(katzDeliLine, name) {
       var number = i;
       var line = `The line is currently: ${number}. ${person},`;
     }
-
   }
+  return line;
 }
