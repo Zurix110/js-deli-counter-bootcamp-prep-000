@@ -23,12 +23,17 @@ function currentLine(katzDeliLine) {
   if (katzDeliLine.length === 0) {
     var currentLine = "The line is currently empty.";
   } else {
-    var currentLine = "The line is currently: "
-    for (var i = 0; i < katzDeliLine.length; i++) {
-     var number = i;
-     var person = katzDeliLine[i];
-     currentLine += number + ". " + person + ", ";
-    }
+      var currentLine = "The line is currently: "
+      for (var i = 0; i < katzDeliLine.length; i++) {
+        var number = i;
+        var person = katzDeliLine[i];
+        if (number + 1 === katzDeliLine.length) {
+          currentLine += number + ". " + person;
+        } else {
+          currentLine += number + ". " + person + ", ";
+        }
+
+      }
     }
   return currentLine;
 }
