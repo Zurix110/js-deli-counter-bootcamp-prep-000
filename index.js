@@ -25,14 +25,13 @@ function currentLine(katzDeliLine) {
   } else {
       var currentLine = "The line is currently: "
       for (var i = 0; i < katzDeliLine.length; i++) {
-        var number = i;
+        var number = i + 1;
         var person = katzDeliLine[i];
         if (number + 1 === katzDeliLine.length) {
           currentLine += number + ". " + person;
         } else {
           currentLine += number + ". " + person + ", ";
         }
-
       }
     }
   return currentLine;
